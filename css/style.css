@@ -1,31 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 
 .menu{
     background-color: #A60811;
-    
-}
-
-nav ul{
-    list-style-type: none;
 }
 
 
+.menu h1{
+    padding: 20px;
+    font-size: 50px;
+}
 
-h1 a{
+a{
     text-decoration: none;
     color: white
 }
 
-nav a{
-    color: white;
-    text-decoration: none;
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav ul li{
-    display: inline;
+.nav-list ul li{
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px;
+    margin: 20px;
+}
+
+.fotos{
+    display: flex;
+    flex-direction: row;
+}
+.fotos img{
+    max-width: 25%;
+    
 }
 
 .rodapé{
     background-color: #A60811;
     color: white;
+    text-align: center;
 }
