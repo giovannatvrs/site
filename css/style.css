@@ -28,7 +28,6 @@ h1{
 
 h2{
     font-family: "Aleo", serif;
-    font-family: 600;
     font-size: 30px;
 }
 
@@ -103,11 +102,22 @@ nav{
 }
 
 aside{
-    margin: 30px;
+    padding-left: 90px;
+    padding-bottom: 90px;
+    padding-right: 90px;
+    margin: 20px;
+    margin-top: 30px;
+    
 }
 
 .bloco-de-texto{
-    margin-left: 100px;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 230px;
+}
+
+.bloco-de-texto h2{
+    text-align: justify;
 }
 
 .fotos{
@@ -132,12 +142,12 @@ aside{
 }
 
 .info-texto{
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 340px;
+    margin-right: 340px;
     padding: 50px;
 }
 
-.info-texto p{
+.info-texto p, .bloco-de-texto p{
     text-align: justify;
     font-size: 25px;
     font-weight: 300;
