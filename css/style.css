@@ -42,6 +42,8 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: white;
+    
 }
 
 .nav-list ul li{
@@ -63,17 +65,18 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 
 }
 
-.banner-divisoria{
+.divisoria{
     background-color: rgba(67, 0, 27, 1);
     height: 15px;
 }
 
 
 .banner-historia{
-    background-image: url("../fotos/foto1.jpeg");
+    background-image: url("../fotos/brigadeiro-mordido.jpg");
     height: 300px;
     background-position: center;
     background-size: cover;
@@ -83,22 +86,19 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    font-size: 25px;
+}
+
+#cricao{
+    font-size: 50px;
 }
 
 
-
-
-.divisoria{
-    background-color: #F7DF99;
-    height: 15px;
-    
-}
-
-.main{
+.main, .main-historia{
     display: flex;
     flex-direction: row;
     margin: 20px;
+    margin-top: 50px;
 }
 
 aside{
@@ -106,14 +106,15 @@ aside{
     padding-bottom: 90px;
     padding-right: 90px;
     margin: 20px;
-    margin-top: 30px;
+    margin-top: 0;
     
 }
 
 .bloco-de-texto{
-    margin-top: 30px;
-    margin-left: 20px;
-    margin-right: 230px;
+    
+    margin-bottom: 50px;
+    margin-left: 30px;
+    margin-right: 320px;
 }
 
 .bloco-de-texto h2{
@@ -142,8 +143,9 @@ aside{
 }
 
 .info-texto{
-    margin-left: 340px;
-    margin-right: 340px;
+    margin-top: 30px;
+    margin-left: 20%;
+    margin-right: 20%;
     padding: 50px;
 }
 
