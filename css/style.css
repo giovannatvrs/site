@@ -57,7 +57,7 @@ nav{
 }
 
 .banner{
-    background-image: url("../fotos/brigadeiro1.jpeg");
+    background-image: url("../fotos/brigadeiro-com-creme-de-leite-2.jpeg");
     width: 100%;
     height: 250px;
     background-position: center;
@@ -69,6 +69,56 @@ nav{
     align-items: center;
     
 
+}
+
+
+.main-curiosidades{
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: justify;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.main-curiosidades ul li{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.main-curiosidades p{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.main-curiosidades h2, h3{
+    margin-top: 30px;
+    text-align: center;
+    
+}
+
+table{
+    border: 1px solid #d31545;
+    display: flex;
+    background-color: rgb(255, 129, 167);;
+    color:white;
+    margin: 50px;
+    
+
+}
+
+table th{
+    border: 1px solid #d31545;
+    background-color: #d31545;
+    width: 100%;
+    text-align: center;
+}
+
+table td{
+    border: #d31545;
 }
 
 .divisoria{
@@ -151,11 +201,7 @@ aside{
     margin-left: 20px;
 }
 
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 
 .bloco-de-texto{
@@ -203,6 +249,28 @@ aside{
     font-size: 25px;
     font-weight: 300;
     margin: 20px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.banner-curiosidades{
+    background-image: url(../fotos/brigadeiro1.jpeg);
+    width: 100%;
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .rodapé{
