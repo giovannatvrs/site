@@ -12,7 +12,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Brigadeiro - O melhor docinho</title>
 </head>
-<body>
+<body class="body-quiz">
     <div class="menu">
         <header>
             <nav>
@@ -29,101 +29,126 @@
             </nav>   
         </header>
     </div>
+    <div class="main-quiz">
+        <section>
+            <div class="quiz-texto">
+                <h1>Quiz sobre Brigadeiro</h1>
+            <h2>Baseado em todas as informações encontradas nesse site, agora você pode descobrir se é um especialista em brigadeiros com quiz de 10 perguntas. Quer participar?</h2>
+            </div>
+            
+            <div class="quiz-texto2">
+                <h2>Dicas</h2>
+                <ul>
+                    <li>Leia o site com bastante atenção, pois as respostas das perguntas podem ser encontradas pelo site</li>
+                    <li>Porém, há uma pegadinha entre as questões</li>
+                    <li>Divirta-se!</li>
+                </ul>
+                <div id="começar">
+                    <button>Iniciar</button>
+                </div>
+                
+            </div>
+        </section>
+    </div>
+    <div id="quiz">
+        <p class="pergunta">Qual ingrediente é essencial para a receita?</p>
+        <form>
+            <input type="radio" id="manteiga" name="ingrediente" value="Manteiga">
+            <label for="manteiga">Manteiga</label><br>
+            <input type="radio" id="creme" name="ingrediente" value="Creme de Leite">
+            <label for="creme">Creme de leite</label><br>
+            <input type="radio" id="leite" name="ingrediente" value="Leite Condensado">
+            <label for="leite">Leite condensado</label><br>
+        </form>
+
+        <p class="pergunta">Como o brigadeiro é conhecido fora do Brasil?</p>
+        <form>
+            <input type="radio" id="sabor" name="internacional" value="Como um sabor">
+            <label for="manteiga">Como um sabor</label><br>
+            <input type="radio" id="trufa" name="internacional" value="Como uma trufa">
+            <label for="creme">Como uma trufa</label><br>
+            <input type="radio" id="recheio" name="internacional" value="Como um recheio">
+            <label for="leite">Como um recheio</label>
+        </form>
+        <p class="pergunta">Qual brigadeiro NÃO é gourmet?</p>
+        <form>
+            
+        </form>
+        
+        <p class="pergunta">Quando o brigadeiro começou a ser popularizado por todo o país?</p>
+        <form>
+            <input type="radio" id="cinquenta" name="decada" value="Depois da década de 50">
+            <label for="quinze">Depois da década de 50</label><br>
+            <input type="radio" id="noventa" name="decada" value="Depois da década de 90">
+            <label for="dezenove">Depois da década de 90</label><br>
+            <input type="radio" id="vinte" name="decada" value="Depois da década de 20">
+            <label for="dez">Depois da década de 20</label>
+        </form>
+
+        <p class="pergunta">Quando é comemorado o Dia do Brigadeiro?</p>
+        <form>
+            <input type="radio" id="quinze" name="dia" value="15 de outubro">
+            <label for="quinze">15 de outubro</label><br>
+            <input type="radio" id="dezenove" name="dia" value="19 de abril">
+            <label for="dezenove">19 de abril</label><br>
+            <input type="radio" id="dez" name="dia" value="10 de setembro">
+            <label for="dez">10 de setembro</label><br>
+            <input type="radio" id="doze" name="dia" value="12 de junho">
+            <label for="doze">12 de junho</label>
+        </form>
+        
+        <p class="pergunta">Qual opção faz parte das características de um brigadeiro gourmet?</p>
+        <form>
+            <input type="radio" id="pratico" name="caracteristica" value="Fácil e rápido de fazer">
+            <label for="quinze">Fácil e rápido de fazer</label><br>
+            <input type="radio" id="variado" name="caracteristica" value="Várias maneiras de comer (bolinhas, copinho, recheio de bolo, com colher etc).">
+            <label for="dezenove">Várias maneiras de comer (bolinhas, copinho, recheio de bolo, com colher etc).</label><br>
+            <input type="radio" id="diferente" name="caracteristica" value="Ingredientes nobres e sabores diferentes">
+            <label for="dez">Ingredientes nobres e sabores diferentes</label>
+        </form>
+        
+        <p class="pergunta">Marque verdadeiro ou falso: O brigadeiro foi inventado por vários motivos, sendo um deles a falta de leite e açúcar após a Segunda Guerra Mundial (1939-1945)</p>
+        <form>
+            <input type="radio" id="opcao1" name="contexto" value="Verdadeiro">
+            <label for="quinze">Verdadeiro</label><br>
+            <input type="radio" id="opcao2" name="contexto" value="Falso">
+            <label for="dezenove">Falso</label>
+        </form>
+
+        <p class="pergunta">Marque verdadeiro ou falso: Beijinho (41 calorias) é mais calórico que um brigadeiro</p>
+        <form>
+            <input type="radio" id="opcao3" name="caloria" value="Verdadeiro">
+            <label for="quinze">Verdadeiro</label><br>
+            <input type="radio" id="opcao4" name="caloria" value="Falso">
+            <label for="dezenove">Falso</label>
+        </form>
+
+        <p class="pergunta">Marque verdadeiro ou falso: O nome “Brigadeiro” foi inspirado pelo político Eduardo Gomes pois sua patente era brigadeiro e suas eleitoras vendiam o doce para arrecadar fundos de sua campanha para presidente.
+        Fez muito sucesso e ele ganhou a presidência em 1945.</p>
+        <form>
+            <input type="radio" id="opcao5" name="politico" value="Verdadeiro">
+            <label for="quinze">Verdadeiro</label><br>
+            <input type="radio" id="opcao6" name="politico" value="Falso">
+            <label for="dezenove">Falso</label>
+        </form>
+        <p class="pergunta">Com qual intenção esse doce foi criado?</p>
+        <form>
+            <input type="radio" id="mae" name="criacao" value="Uma mãe estava sem ideias para doces e criou algo novo">
+            <label for="criacao">Uma mãe estava sem ideias para doces e criou algo novo</label><br>
+            <input type="radio" id="portugal" name="criacao" value="Não sabe-se quem inventou, pois o doce tem origem em Portugal.">
+            <label for="portugal">Não sabe-se quem inventou, pois o doce tem origem em Portugal.</label><br>
+            <input type="radio" id="acidente" name="criacao" value="Foi criado por acidente em uma confeitaria.">
+            <label for="portugal">Foi criado por acidente em uma confeitaria.</label><br>
+            <input type="radio" id="campanha" name="criacao" value="Para arrecadar dinheiro a uma campanha presidencial">
+            <label for="portugal">Para arrecadar dinheiro a uma campanha presidencial</label>
+        </form>
+        
+    </div>
     
-    <h1>Quiz sobre Brigadeiro</h1>
-    <h2>Baseado em todas as informações encontradas nesse site, agora você pode descobrir se é um especialista em brigadeiros com quiz de 10 perguntas. Quer participar?</h2>
 
-    <h2>Dicas</h2>
-    <p>Leia o site com bastante atenção, pois as perguntas são fáceis. Mas há uma pegadinha entre as questões.</p>
-
-<!--1- Qual ingrediente é essencial para a receita?
-A)Manteiga
-
-
-B)Creme de leite
-
-
-C)Leite Condensado
-
-
-2- Como o brigadeiro é conhecido fora do Brasil?
-A)Como um sabor
-
-
-B)Como uma trufa
-
-
-C)Como um recheio
-
-
+<!--
 3- Qual brigadeiro NÃO é gourmet?
 fotoA fotoB fotoC
-4- Quando o brigadeiro começou a ser popularizado por todo o país?
-A)Depois da década de 50
-
-
-B)Depois da década de 90
-
-
-C)Depois da década de 20
-
-
-5- Quando é comemorado o Dia do Brigadeiro?
-A)15 de outubro.
-
-
-B)19 de abril.
-
-
-C)10 de setembro.
-
-
-D)12 de junho.
-
-
-6- Qual opção faz parte das características de um brigadeiro gourmet?
-A)Fácil e rápido de fazer.
-
-
-B)Várias maneiras de comer (bolinhas, copinho, recheio de bolo, com colher etc).
-
-
-C) Ingredientes nobres e sabores diferentes
-
-
-7-Marque verdadeiro ou falso: O brigadeiro foi inventado por vários motivos, sendo um deles a falta de leite e açúcar após a Segunda Guerra Mundial (1939-1945)
-A)Verdadeiro
-
-
-B)Falso
-
-
-8- Marque verdadeiro ou falso: Beijinho (41 calorias) é mais calórico que um brigadeiro
-A)Verdadeiro
-
-
-B)Falso
-
-
-9-Marque verdadeiro ou falso: O nome “Brigadeiro” foi inspirado pelo político Eduardo Gomes pois sua patente era brigadeiro e suas eleitoras vendiam o doce para arrecadar fundos de sua campanha para presidente.
-Fez muito sucesso e ele ganhou a presidência em 1945.
-A)Verdadeiro
-
-
-B)Falso
-
-
-10-Com qual intenção esse doce foi criado?
-A)Uma mãe estava sem ideias para doces e criou algo novo
-
-
-B)Não sabe-se quem inventou, pois o doce tem origem em Portugal.
-
-
-Foi criado por acidente em uma confeitaria.
-
-
-D)Para arrecadar dinheiro a uma campanha presidencial
 
 Gabarito
 1- C 2- B 3- B 4- A 5- C 6- C 7- A 8- A 9- B 10- D
@@ -140,6 +165,6 @@ De 8 a 10 acertos: Uau, incrível! Devido a sua pontuação, é óbvio que você
             <p>Desenvolvimento de Páginas Web</p>
         </footer>
     </div>
-    
+    <script src="script.js"></script>
 </body>
 </html>
