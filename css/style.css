@@ -358,11 +358,45 @@ aside{
 }
 
 .pergunta{
-    font-size: 25px;
+    font-size: 23px;
     font-weight: 500;
     font-style: bold;
+        
+    
 }
 
+.pergunta2{
+    font-size: 20px;
+    font-weight: 400;
+    font-style: bold;
+    margin-bottom: 10px;
+}
+
+
+
+fieldset{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 8px;
+}
+
+legend{
+    margin-bottom: 5px;
+}
+
+label{
+    transition: all 0.5s;
+    color: #333;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+label:hover{
+    color:black
+}
 
 
 .rodapé{
