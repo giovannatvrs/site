@@ -62,10 +62,43 @@
         <h2 id="nome">Por que o doce se chama "Brigadeiro"?</h2>
         <p>Em 1945, o Brasil estava em época de campanha para eleição de um novo presidente. É dito que o candidato Eduardo Gomes, cuja patente militar era Brigadeiro, foi a inspiração para o nome do docinho
          no qual suas eleitoras batizaram como “doce de brigadeiro”. O doce foi um sucesso, mas o candidato acabou por não ser eleito.</p>
-        <img src="fotos/eduardogomes.jpg">
-        <img src="fotos/eduardogomes1.jpg">
-        <img src="fotos/eduardogomes2.jpg">
-        <img src="fotos/hist.jpeg">
+        <div id="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+
+                <div class="slide first">
+                    <img src="fotos/eduardogomes.jpg" alt="Foto em preto e branco do Eduardo Gomes">
+                </div>
+                <div class="slide">
+                    <img src="fotos/eduardogomes1.jpg" alt="Poster da camapanha presencial do Eduardo Gomes pelo UDN, está escrito em vermelho: Para presidente - Vote no Brigadeiro">
+                </div>
+                <div class="slide">
+                    <img src="fotos/eduardogomes2.jpg" alt="Foto do Eduardo Gomes com um quepe e terno militar">
+                </div>
+                <div class="slide">
+                    <img src="fotos/hist.jpeg" alt="Poster da camapanha presencial do Eduardo Gomes, ele está com uma senhora e embaixo está escrito: Vote no Brigadeiro! O continuador de nossas tradições">
+                </div>
+                
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+            </div>
+            <div class="manual-navigation">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+
+            </div>
+
+        </div>
+         
          <h2 id="quem">Quem criou?</h2>
          <img src="fotos/doceira.jpeg" id="doceira">
          <p>Uma das versões é dito que com o objetivo de arrecadar fundos para o candidato, a doceira Heloísa Nabuco de Oliveira preparou e levou para um dos comitês de senhoras da sociedade que apoiavam a 

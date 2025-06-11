@@ -56,6 +56,10 @@ nav{
     font-size: 18px;
 }
 
+.nav-list ul li:hover{
+    background-color: #df121d;
+}
+
 .banner{
     background-image: url("../fotos/brigadeiro-com-creme-de-leite-2.jpeg");
     width: 100%;
@@ -152,28 +156,43 @@ table td{
 }
 
 .texto-historia p{
-    margin-top: 15px;
+    margin-top: 20px;
     margin-bottom: 30px;
 }
 
 aside{
-    padding-left: 90px;
-    padding-bottom: 90px;
-    padding-right: 90px;
-    margin: 20px;
     
+    margin: 20px;
+    margin-top: 40px;
 }
 
 .indice{
-    padding: 0;
+    
     margin: 20px;
-    margin-left: 40px;
+    margin-top: 40px;
     width: 20%;
-    font-size: 15px;
+    font-size: 20px;
+}
+.indice h2{
+    text-align: center;
+}
+
+.indice ul{
+    padding: 20px;
+    padding-left: 30px;
+}
+
+.indice li{
+    margin-bottom: 10px;
 }
 
 .indice a{
     color: black;
+}
+
+.indice a:hover{
+    color:#A60811;
+    text-decoration: underline;
 }
 
 
@@ -181,12 +200,16 @@ aside{
 
 .texto-historia{
     margin: 20px;
+    margin-left: 30px;
     width: 80%;
     margin-right: 18%;
+    margin-top: 40px;
     font-size: 25px;
     font-weight: 300;
     text-align: justify;
 }
+
+
 
 #propaganda{
     margin-bottom: 30px;
@@ -206,7 +229,7 @@ aside{
 
 .bloco-de-texto{
     width: 1050px;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-bottom: 50px;
     margin-left: 30px;
     margin-right: 320px;
@@ -276,7 +299,7 @@ aside{
     
 }
 
-.main-quiz h1, h2, p{
+.main-quiz h1{
     margin: 0;
     margin-top: 40px;
     margin-bottom: 20px;
@@ -414,3 +437,70 @@ label:hover{
 }
 
 
+#slider{
+    margin: 0 auto;
+    width: 220px;
+    height: 400px;
+    overflow: hidden;
+}
+
+
+.slides{
+    width:400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+
+.slide{
+    width: 25%;
+    position: relative;
+}
+
+.slide img{
+    width: 220px;
+    height: 355px;
+}
+
+.manual-navigation{
+    position:absolute;
+    width: 220px;
+    margin-top: -60px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 10px;
+}
+
+.manual-btn:hover{
+    background-color: #fff;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
