@@ -14,7 +14,12 @@ body {
     background-color: #A60811;
 }
 
-
+#calendario{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 h1{
@@ -104,26 +109,7 @@ nav{
     
 }
 
-table{
-    border: 1px solid #d31545;
-    display: flex;
-    background-color: rgb(255, 129, 167);;
-    color:white;
-    margin: 50px;
-    
 
-}
-
-table th{
-    border: 1px solid #d31545;
-    background-color: #d31545;
-    width: 100%;
-    text-align: center;
-}
-
-table td{
-    border: #d31545;
-}
 
 .divisoria{
     background-color: rgba(67, 0, 27, 1);
@@ -161,13 +147,15 @@ table td{
 }
 
 aside{
-    
+    text-align: center;
     margin: 20px;
     margin-top: 40px;
+    width: 18%;
+    
 }
 
 .indice{
-    
+    text-align: justify;
     margin: 20px;
     margin-top: 40px;
     width: 20%;
@@ -204,7 +192,7 @@ aside{
     width: 80%;
     margin-right: 18%;
     margin-top: 40px;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 300;
     text-align: justify;
 }
@@ -269,7 +257,7 @@ aside{
 
 .info-texto p, .bloco-de-texto p{
     text-align: justify;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 300;
     margin: 20px;
 }
@@ -442,6 +430,8 @@ label:hover{
     width: 220px;
     height: 400px;
     overflow: hidden;
+    float: left;
+    margin-right: 10px;
 }
 
 
