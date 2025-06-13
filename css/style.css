@@ -364,6 +364,40 @@ aside{
     margin-bottom: 30px;
 }
 
+#resultado{
+    background-color: rgba(250, 236, 190, 1);
+    border-radius: 20px;
+    margin: 50px;
+    background: linear-gradient(to bottom, #fff7d5, #ffeeb2);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 40px;
+    display: none;
+}
+
+#resultado h1{
+    text-align: center;
+    margin-bottom: 15px;
+}
+#comentario{
+    margin-bottom: 20px;
+}
+
+#quantidade{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.numero{
+    font-size: 20px;
+}
+
+#acertos, #erros{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+}
 
 .main-curiosidades a{
     color: blue;
@@ -453,6 +487,34 @@ label:hover{
     color:black
 }
 
+.botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#enviar, #reiniciar{
+    background-color: #df121d;
+    color: white;
+    border-style: none;
+    width: 100px;
+    border-radius: 2px;
+    padding: 5px;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+#reiniciar{
+    padding: 8px;
+}
+
+#enviar:hover, #reiniciar:hover{
+    background-color: rgba(67, 0, 27, 1);
+    
+}
 
 .rodapé{
     background-color: #A60811;

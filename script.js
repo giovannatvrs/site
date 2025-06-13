@@ -109,6 +109,92 @@ if(document.getElementById("livro-do-brigadeiro")){
     
 }
 
+const enviar = document.getElementById("enviar");
+const leite = document.getElementById("leite");
+const trufa = document.getElementById("trufa");
+const cinquenta = document.getElementById("cinquenta");
+const h1 = document.getElementById("h1-resultado");
+const comentario = document.getElementById("comentario");
+const acertosQuiz = document.getElementById("acertos");
+const errosQuiz = document.getElementById("erros");
+const status = document.getElementById("status");
+const dez = document.getElementById("dez");
+const diferente = document.getElementById("diferente");
+const opcao1 = document.getElementById("opcao1");
+const opcao3 = document.getElementById("opcao3");
+const opcao6 = document.getElementById("opcao6");
+const campanha = document.getElementById("campanha");
+const resultado = document.getElementById("resultado");
+
+if(enviar){
+    function mostrarResultado(){
+        event.preventDefault();
+        if(!document.querySelector("form").checkValidity()){
+            window.alert("Responda todas as questões antes de enviar");
+        }
+        else{
+            let acertos = 0;
+        let erros = 0;
+        
+        acertos+= leite.checked ? 1 : 0;
+        erros+= leite.checked ? 0: 1;
+
+        acertos+= trufa.checked ? 1 : 0;
+        erros+= trufa.checked ? 0: 1;
+
+        acertos+= cinquenta.checked ? 1 : 0;
+        erros+= cinquenta.checked ? 0: 1;
+
+        acertos+= dez.checked ? 1 : 0;
+        erros+= dez.checked ? 0: 1;
+
+        acertos+= diferente.checked ? 1 : 0;
+        erros+= diferente.checked ? 0: 1;
+
+        acertos+= opcao1.checked ? 1 : 0;
+        erros+= opcao1.checked ? 0: 1;
+
+        acertos+= opcao3.checked ? 1 : 0;
+        erros+= opcao3.checked ? 0: 1;
+
+        acertos+= opcao6.checked ? 1 : 0;
+        erros+= opcao6.checked ? 0: 1;
+
+        acertos+= campanha.checked ? 1 : 0;
+        erros+= campanha.checked ? 0: 1;
+
+        if(acertos <= 4){
+            h1.textContent = "Obrigado por participar!";
+            comentario.textContent="Você não sabe muito sobre a gastronomia do brigadeiro, mas certamente gosta tanto do doce que decidiu fazer esse quiz.";
+            acertosQuiz.textContent = acertos;
+            errosQuiz.textContent = erros;
+        }
+        else if(acertos > 4 && acertos < 8){
+            h1.textContent = "Parabéns!";
+            comentario.textContent="Com o seu conhecimento sobre brigadeiros, você é capaz de fazê-los de diversas formas e no momento que você quiser";
+            acertosQuiz.textContent = acertos;
+            errosQuiz.textContent = erros;
+            status.textContent = "Status: Chefe da Brigaderia";
+        }
+        else{
+            h1.textContent = "Uau, incrível!";
+            comentario.textContent="Devido a sua alta pontuação, é óbvio que você pode ser chamado de especialista de brigadeiros.";
+            acertosQuiz.textContent = acertos;
+            errosQuiz.textContent = erros;
+            status.textContent = "Status: Gênio do Brigadeiro";
+        }
+        enviar.style.display = "none";
+        resultado.style.display = "block";
+        }
+        
+    }
+    
+    enviar.addEventListener("click", mostrarResultado);
+
+    document.getElementById("reiniciar").onclick = function(){
+        window.location.reload();
+    } 
+}
 
 
 

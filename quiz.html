@@ -52,43 +52,46 @@
     </div>
     <div class="divisoria"></div>
     <div id="quiz">
-         
-        <fieldset>
-            <legend class="pergunta">Como o brigadeiro é conhecido fora do Brasil?</legend>
         <form>
-            <input type="radio" id="sabor" name="internacional" value="Como um sabor">
-            <label for="sabor">Como um sabor</label><br>
-            <input type="radio" id="trufa" name="internacional" value="Como uma trufa">
-            <label for="trufa">Como uma trufa</label><br>
-            <input type="radio" id="recheio" name="internacional" value="Como um recheio">
-            <label for="recheio">Como um recheio</label>
-        </form>
-        </fieldset>
-        
-        <fieldset>
-            <legend class="pergunta">Qual brigadeiro NÃO é gourmet?</legend>
-            <form>
+            <fieldset>
+                <legend class="pergunta">Qual ingrediente é essencial para a receita de brigadeiro?</legend>
+            
+                <input type="radio" id="manteiga" name="ingrediente" value="Manteiga" required>
+                <label for="manteiga">Manteiga</label><br>
+                <input type="radio" id="creme" name="ingrediente" value="Creme de Leite">
+                <label for="creme">Creme de Leite</label><br>
+                <input type="radio" id="leite" name="ingrediente" value="Leite Condensado">
+                <label for="leite">Leite Condensado</label>
+            
+            </fieldset> 
+            <fieldset>
+                <legend class="pergunta">Como o brigadeiro é conhecido fora do Brasil?</legend>
+            
+                <input type="radio" id="sabor" name="internacional" value="Como um sabor" required>
+                <label for="sabor">Como um sabor</label><br>
+                <input type="radio" id="trufa" name="internacional" value="Como uma trufa">
+                <label for="trufa">Como uma trufa</label><br>
+                <input type="radio" id="recheio" name="internacional" value="Como um recheio">
+                <label for="recheio">Como um recheio</label>
+            
+            </fieldset>
 
-            </form>
-        </fieldset>
-        
-        
-        <fieldset>
-            <legend class="pergunta">Quando o brigadeiro começou a ser popularizado por todo o país?</legend>
-            <form>
-                <input type="radio" id="cinquenta" name="decada" value="Depois da década de 50">
+            <fieldset>
+                <legend class="pergunta">Qual brigadeiro NÃO é gourmet?</legend>
+                
+            </fieldset>
+            <fieldset>
+                <legend class="pergunta">Quando o brigadeiro começou a ser popularizado por todo o país?</legend>
+                <input type="radio" id="cinquenta" name="decada" value="Depois da década de 50" required>
                 <label for="cinquenta">Depois da década de 50</label><br>
                 <input type="radio" id="noventa" name="decada" value="Depois da década de 90">
                 <label for="noventa">Depois da década de 90</label><br>
                 <input type="radio" id="vinte" name="decada" value="Depois da década de 20">
                 <label for="vinte">Depois da década de 20</label>
-            </form>
-        </fieldset>
-        
-        <fieldset>
-            <legend class="pergunta">Quando é comemorado o Dia do Brigadeiro?</legend>
-            <form>
-                <input type="radio" id="quinze" name="dia" value="15 de outubro">
+            </fieldset>
+            <fieldset>
+                <legend class="pergunta">Quando é comemorado o Dia do Brigadeiro?</legend>
+                <input type="radio" id="quinze" name="dia" value="15 de outubro" required>
                 <label for="quinze">15 de outubro</label><br>
                 <input type="radio" id="dezenove" name="dia" value="19 de abril">
                 <label for="dezenove">19 de abril</label><br>
@@ -96,63 +99,43 @@
                 <label for="dez">10 de setembro</label><br>
                 <input type="radio" id="doze" name="dia" value="12 de junho">
                 <label for="doze">12 de junho</label>
-            </form>
-        </fieldset>
-        
-        <fieldset>
-            <legend class="pergunta">Qual opção faz parte das características de um brigadeiro gourmet?</legend>
-            <form>
-                <input type="radio" id="pratico" name="caracteristica" value="Fácil e rápido de fazer">
+            </fieldset>
+            <fieldset>
+                <legend class="pergunta">Qual opção faz parte das características de um brigadeiro gourmet?</legend>
+                <input type="radio" id="pratico" name="caracteristica" value="Fácil e rápido de fazer" required>
                 <label for="pratico">Fácil e rápido de fazer</label><br>
                 <input type="radio" id="variado" name="caracteristica" value="Várias maneiras de comer (bolinhas, copinho, recheio de bolo, com colher etc).">
                 <label for="variado">Várias maneiras de comer (bolinhas, copinho, recheio de bolo, com colher etc).</label><br>
                 <input type="radio" id="diferente" name="caracteristica" value="Ingredientes nobres e sabores diferentes">
                 <label for="diferente">Ingredientes nobres e sabores diferentes</label>
-            </form>
-        </fieldset>
-        
-        
-
-        <fieldset>
-            <legend class="pergunta">Marque verdadeiro ou falso:</legend>
-            <div class="pergunta2">O brigadeiro foi inventado por vários motivos, sendo um deles a falta de leite e açúcar após a Segunda Guerra Mundial (1939-1945)</div>
-            <form>
-                <input type="radio" id="opcao1" name="contexto" value="Verdadeiro">
+            </fieldset>
+            <fieldset>
+                <legend class="pergunta">Marque verdadeiro ou falso:</legend>
+                <div class="pergunta2">O brigadeiro foi inventado por vários motivos, sendo um deles a falta de leite e açúcar após a Segunda Guerra Mundial (1939-1945)</div>
+                <input type="radio" id="opcao1" name="contexto" value="Verdadeiro" required>
                 <label for="opcao1">Verdadeiro</label><br>
                 <input type="radio" id="opcao2" name="contexto" value="Falso">
                 <label for="opcao2">Falso</label>
-            </form>
-            
-        </fieldset>
-
-        <fieldset>
-            <legend class="pergunta">Marque verdadeiro ou falso: Beijinho (41 calorias) é mais calórico que um brigadeiro</legend>
-            <form>
-                <input type="radio" id="opcao3" name="caloria" value="Verdadeiro">
+            </fieldset>
+            <fieldset>
+                <legend class="pergunta">Marque verdadeiro ou falso: Beijinho (41 calorias) é mais calórico que um brigadeiro</legend>
+                <input type="radio" id="opcao3" name="caloria" value="Verdadeiro" required>
                 <label for="opcao3">Verdadeiro</label><br>
                 <input type="radio" id="opcao4" name="caloria" value="Falso">
                 <label for="opcao4">Falso</label>
-            </form>
-            
-        </fieldset>
-
-        <fieldset>
-            <legend class="pergunta">Marque verdadeiro ou falso:</legend>
-            <div class="pergunta2">O nome “Brigadeiro” foi inspirado pelo político Eduardo Gomes pois sua patente era brigadeiro e suas eleitoras vendiam o doce para arrecadar fundos de sua campanha para presidente.
-                Fez muito sucesso e ele ganhou a presidência em 1945.</div>
-            <form>
-                <input type="radio" id="opcao5" name="politico" value="Verdadeiro">
+            </fieldset>
+            <fieldset>
+                <legend class="pergunta">Marque verdadeiro ou falso:</legend>
+                <div class="pergunta2">O nome “Brigadeiro” foi inspirado pelo político Eduardo Gomes pois sua patente era brigadeiro e suas eleitoras vendiam o doce para arrecadar fundos de sua campanha para presidente.
+                    Fez muito sucesso e ele ganhou a presidência em 1945.</div>
+                <input type="radio" id="opcao5" name="politico" value="Verdadeiro" required>
                 <label for="opcao5">Verdadeiro</label><br>
                 <input type="radio" id="opcao6" name="politico" value="Falso">
-                <label for="opcao6">Falso</label>
-            </form>    
-            
-        </fieldset>
-
-        <fieldset>
-            <legend class="pergunta">Com qual intenção esse doce foi criado?</legend>
-            <form>
-                <input type="radio" id="mae" name="criacao" value="Uma mãe estava sem ideias para doces e criou algo novo">
+                <label for="opcao6">Falso</label>    
+            </fieldset>
+            <fieldset>
+                <legend class="pergunta">Com qual intenção esse doce foi criado?</legend>
+                <input type="radio" id="mae" name="criacao" value="Uma mãe estava sem ideias para doces e criou algo novo" required>
                 <label for="mae">Uma mãe estava sem ideias para doces e criou algo novo</label><br>
                 <input type="radio" id="portugal" name="criacao" value="Não sabe-se quem inventou, pois o doce tem origem em Portugal.">
                 <label for="portugal">Não sabe-se quem inventou, pois o doce tem origem em Portugal.</label><br>
@@ -160,10 +143,32 @@
                 <label for="acidente">Foi criado por acidente em uma confeitaria.</label><br>
                 <input type="radio" id="campanha" name="criacao" value="Para arrecadar dinheiro a uma campanha presidencial">
                 <label for="campanha">Para arrecadar dinheiro a uma campanha presidencial</label>
-            </form>
-            
-        </fieldset>
+
+            </fieldset>
+            <div class="botao">
+                <button  type="submit" id="enviar">Enviar Respostas</button>
+            </div>
+        </form>
         
+        <div id="resultado">
+            <h1 id="h1-resultado"></h1>
+            <p id="comentario"></p>
+            <div id="quantidade">
+                <div class="numero">
+                    <p>Número de acertos: </p>
+                    <p id="acertos"></p>
+                </div>
+                <div class="numero">
+                    <p>Número de erros:</p>
+                    <p id="erros"></p>
+                </div>
+                
+            </div>
+            <p id="status"></p>
+            <div class="botao">
+                <button  type="button" id="reiniciar">Reiniciar Quiz</button>
+            </div>
+        </div>
     </div>
     
 
