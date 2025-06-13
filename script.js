@@ -93,6 +93,25 @@ if(document.getElementById("calendario")){
 
 }
 
+if(document.getElementById("livro-do-brigadeiro")){
+    
+
+    function mostrarLivro1(){
+        document.getElementById("livro-do-brigadeiro").src= "./fotos/livro2.jpg"
+    }
+
+    function mostrarLivro2(){
+        document.getElementById("livro-do-brigadeiro").src= "./fotos/livro1.jpeg"
+    
+    }
+    document.getElementById("livro-do-brigadeiro").onmouseover = mostrarLivro1;
+    document.getElementById("livro-do-brigadeiro").onmouseout = mostrarLivro2;
+    
+}
+
+
+
+
 
 
 

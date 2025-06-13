@@ -82,21 +82,23 @@ nav{
 
 
 .main-curiosidades{
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
     margin-top: 30px;
     margin-bottom: 30px;
     margin-left: 20%;
     margin-right: 20%;
     text-align: justify;
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 300;
 }
 
-.main-curiosidades ul li{
-    margin-top: 25px;
-    margin-bottom: 25px;
+.main-curiosidades ul li, .main-curiosidades ol li{
+    margin-top: 30px;
+    margin-bottom: 40px;
 }
+
+
 
 .main-curiosidades p{
     margin-top: 50px;
@@ -105,10 +107,48 @@ nav{
 
 .main-curiosidades h2, h3{
     margin-top: 30px;
+    margin-bottom: 30px;
     text-align: center;
     
 }
 
+#tabela{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+   text-align: center;
+   color: white;
+   
+   
+}
+
+#tabela table{
+    border-collapse: collapse;
+    width: 60%;
+}
+
+#tabela th{
+    background-color: #df121d;
+    font-weight: 500;
+    padding: 10px;
+}
+
+#tabela td{
+    background-color: rgb(255, 129, 167);
+    padding: 10px;
+    border: 1px solid #df121d;
+}
+#imagem, #video{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#livro-do-brigadeiro{
+    width: 500px;
+}
 
 
 .divisoria{
@@ -128,7 +168,7 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 
@@ -192,7 +232,7 @@ aside{
     width: 80%;
     margin-right: 18%;
     margin-top: 40px;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 300;
     text-align: justify;
 }
@@ -257,7 +297,7 @@ aside{
 
 .info-texto p, .bloco-de-texto p{
     text-align: justify;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 300;
     margin: 20px;
 }
@@ -327,6 +367,10 @@ aside{
 
 .main-curiosidades a{
     color: blue;
+}
+
+.main-curiosidades ul li{
+    list-style-type: none;
 }
 
 #começar{
