@@ -194,9 +194,68 @@ if(enviar){
     document.getElementById("reiniciar").onclick = function(){
         window.location.reload();
     } 
+
+    
 }
 
+const cards = document.querySelectorAll('.carta');
+let cartaVirou = false;
+let bloqueio = false;
+let primeiraCarta, segundaCarta;
+function virarCarta() {
+    if(bloqueio) return;
+    if (this === primeiraCarta) return;
+    this.classList.add('flip');
+    if (!cartaVirou) {
+        cartaVirou = true;
+        primeiraCarta = this;
+        return;
+    }
+    
+segundaCarta = this;
 
+
+checarPorPar();
+
+}
+
+ function checarPorPar() {
+   if (primeiraCarta.dataset.framework === segundaCarta.dataset.framework) {
+     desativarCartas();
+     return;
+   }
+
+   desvirarCartas();
+ }
+
+ function desativarCartas() {
+   primeiraCarta.removeEventListener('click', virarCarta);
+   segundaCarta.removeEventListener('click', virarCarta);
+    reset();
+}
+
+ function desvirarCartas() {
+    bloqueio = true;
+   setTimeout(() => {
+     primeiraCarta.classList.remove('flip');
+     segundaCarta.classList.remove('flip');
+     reset();
+   }, 1500);
+ }
+
+ function reset(){
+    [cartaVirou, bloqueio] = [false, false];
+    [primeiraCarta, segundaCarta] = [null,null];
+ }
+
+ (function shuffle() {
+   cards.forEach(card => {
+     let ramdomPos = Math.floor(Math.random() * 12);
+     card.style.order = ramdomPos;
+   });
+ })();
+
+cards.forEach(card => card.addEventListener('click', virarCarta));
 
 
 
