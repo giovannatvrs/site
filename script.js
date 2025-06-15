@@ -112,6 +112,7 @@ if(document.getElementById("livro-do-brigadeiro")){
 const enviar = document.getElementById("enviar");
 const leite = document.getElementById("leite");
 const trufa = document.getElementById("trufa");
+const foto2=document.getElementById("foto2");
 const cinquenta = document.getElementById("cinquenta");
 const h1 = document.getElementById("h1-resultado");
 const comentario = document.getElementById("comentario");
@@ -141,6 +142,9 @@ if(enviar){
 
         acertos+= trufa.checked ? 1 : 0;
         erros+= trufa.checked ? 0: 1;
+        
+        acertos+= foto2.checked ? 1 : 0;
+        erros+= foto2.checked ? 0: 1;
 
         acertos+= cinquenta.checked ? 1 : 0;
         erros+= cinquenta.checked ? 0: 1;

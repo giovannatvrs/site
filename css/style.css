@@ -299,7 +299,7 @@ aside{
     text-align: justify;
     font-size: 22px;
     font-weight: 300;
-    margin: 20px;
+    margin-top: 20px;
 }
 
 .container{
@@ -470,6 +470,23 @@ fieldset{
     border-radius: 10px;
     padding: 20px;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 8px;
+}
+
+fieldset img{
+    width: 270px;
+    height: 225px;
+    border-radius: 10px;
+    
+}
+
+#imagens-quiz{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#perguntas{
+    display: flex;
+    justify-content: space-around;
 }
 
 legend{
